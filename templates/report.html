@@ -1,0 +1,22 @@
+{%include 'uhead.html'%}<br><br>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+   <div class="col-md-4" ></div>
+    <div class="col-md-4" >
+    <div class="container">
+<h2>Give Report Here</h2>
+  <form action="/report1" >
+            <input type="hidden" class="form-control"  placeholder="Enter report" name="cname" value="{{cname}}">
+
+    <div class="form-group">
+      <label for="username"><h5>Enter Report:</h5></label>
+      <input type="username" class="form-control" id="username" placeholder="Enter report" name="report">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</div>
+

@@ -1,0 +1,31 @@
+{% include  'uhead.html' %}
+<div class="container">
+    <div class="h3 text-center">News Details Details</div>
+    <div class="row">
+        {% for user in userDetails %}
+
+
+ <div class="col-md-12" style="margin-top: 20px;">
+            <div class="card">
+                                <div class="card-header">{{user[7]}}</div>
+
+                 <div class="card-body">
+                                           <div><label><b>News Title</b></label>:{{user[2]}}</div>
+
+                      <div><label><b>News Category</b></label>:{{user[1]}}</div>
+                     <div><label><b>Description</b></label>:{{user[3]}}</div>
+                     <div><label><b>Uploded Date</b></label>:{{user[4]}}</div>
+                    </div>
+
+                 <div class="card-footer">
+                     <a href="/feedback?id={{user[7]}}" class="btn btn-info" >Give Feedback</a>&nbsp;
+                     <a href="/report?id={{user[7]}}" class="btn btn-info" >Send Report</a>
+
+                 </div>
+
+
+            </div>
+        </div>
+  {% endfor %}
+
+    </div></div>

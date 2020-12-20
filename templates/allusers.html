@@ -1,0 +1,47 @@
+{% include 'ahead.html'%}
+	<center><h1>View User Details</h1></center>
+<body>
+
+
+<div class="container text-dark">
+ <table class="table" border="1">
+    <thead class="thead-dark">
+      <tr>
+        <th>User Id</th>
+              <th>User Name</th>
+<th>name</th>
+			<th>Email </th>
+			<th>Phone </th>
+
+          <th>Status</th>
+          <th>Action</th>
+        </thead>
+</div>
+{% for user in userDetails %}
+
+	<tbody>
+		<tr>
+		   <td>{{user[0]}}</td>
+		   <td>{{user[1]}}</td>
+			<td>{{user[2]}}</td>
+			<td>{{user[3]}}</td>
+<td>{{user[5]}}</td>
+            <td>{{user[6]}}</td>
+
+<td><a href="/verifyusers?Id={{user[0]}}"><button>Verify</button></a> </td>
+
+
+
+
+
+
+
+
+		</tr>
+	</tbody>
+
+  {% endfor %}
+
+
+</table>
+</center>

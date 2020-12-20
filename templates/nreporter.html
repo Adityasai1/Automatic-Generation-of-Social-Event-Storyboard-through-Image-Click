@@ -1,0 +1,39 @@
+{% include "chead.html" %}
+<center><h2>Add News Reporter Here</h2></center>
+<div class="container-fluid">
+  <div class="row">
+   <div class="col-md-4" ></div>
+    <div class="col-md-4" >
+    <div class="container">
+  <form action="/neporter1"   onsubmit="return validate()" name="myform" >
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" pattern="[a-zA-Z]{1,20}"name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" pattern="[a-zA-Z]{1,20}" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password"  pattern="[a-zA-Z]{1,20}" required>
+    </div>
+     <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="number" class="form-control" id="phone" c placeholder="Enter phnonenumber" name="phone" required>
+    </div>
+
+
+    <div>
+      <button type="submit" class="btn btn-primary" value="Register">Submit</button>
+
+    <button type="reset" class="btn btn-dark" value="Clear">Clear</button>
+    </div>
+  </form>
+</div>
+</div>
+</div>

@@ -1,0 +1,53 @@
+
+{% include "rhead.html" %}<br><br>
+
+<head>
+<style>
+
+</style>
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+  <div class="row">
+   <div class="col-md-4" ></div>
+    <div class="col-md-4" >
+    <div class="container">
+<H2>Upload Your News Here</H2>
+  <form action="/uploadfile1"  enctype="multipart/form-data" method="post" >
+        <div class="form-group">
+
+      <label for="name">Choose Your News Type</label>
+
+      <select name="category"  class="form-control" >
+ <option value="political news">political news </option>
+  <option value="sports news">sports news</option>
+  <option value="entertainment">Entertainment</option>
+  <option value="fashion news">fashion news</option>
+      </select></div>
+    <div class="form-group">
+      <label for="username">News name:</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter Title" name="newsname">
+    </div>
+
+      <div class="form-group">
+      <label for="username">Product Uploded Date:</label>
+      <input type="date" class="form-control" id=""  name="pdate">
+    </div>
+    <div class="form-group">
+      <label >Descrption:</label>
+        <textarea rows="5" cols="" name="desc" required placeholder="Enter Descrption Here" class="form-control"></textarea>
+    </div>
+          <div class="form-group">
+      <label >File:</label>
+      <input type="file" class="form-control"   name="file">
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+  </form>
+</div>
+</div>
+</div>
+</div>>
+</body>

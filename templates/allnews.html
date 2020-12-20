@@ -1,0 +1,54 @@
+{% include 'chead.html'%}
+	<center><h1>View News Details</h1></center>
+<body>
+
+
+<div class="container text-dark">
+ <table class="table" border="1">
+    <thead class="thead-dark">
+      <tr>
+        <th>News Id</th>
+          <th>News Type</th>
+              <th>News Name</th>
+			<th>Descrption </th>
+<th>Uploded date</th>
+<th>News Repoter Name</th>
+
+          <th>Status</th>
+          <th>Action</th>
+              <th>Action</th>
+
+        </thead>
+</div>
+{% for user in userDetails %}
+
+	<tbody>
+		<tr>
+		   <td>{{user[0]}}</td>
+		   <td>{{user[1]}}</td>
+			<td>{{user[2]}}</td>
+			<td>{{user[3]}}</td>
+<td>{{user[4]}}</td>
+            <td>{{user[5]}}</td>
+                        <td>{{user[8]}}</td>
+
+
+<td><a href="/publishnews?Id={{user[0]}}"><button>Publish</button></a> </td>
+            <td><a href="/rejectnews?Id={{user[0]}}"><button>Rejected</button></a> </td>
+
+
+
+
+
+
+
+
+
+		</tr>
+	</tbody>
+
+  {% endfor %}
+
+
+</table>
+</center>
